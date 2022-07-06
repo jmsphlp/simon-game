@@ -78,6 +78,13 @@ $(document).keypress(function (event) {
         started = true;
     }
 });
+$("h1").click(function (event) {
+    if (!started) {
+
+        nextSequence();
+        started = true;
+    }
+});
 
 function startOver () {
     level = 0;
